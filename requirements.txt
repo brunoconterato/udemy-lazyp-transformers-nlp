@@ -2,3 +2,5 @@ transformers[torch]
 torchinfo
 datasets
 sentencepiece
+sacrebleu
+bert-score

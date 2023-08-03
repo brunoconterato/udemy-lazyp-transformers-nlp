@@ -161,3 +161,7 @@ cython_debug/
 
 ##### Bruno Ignores #####
 *.zip
+# Model folder
+*/model/*
+# Triner folder
+*/my_trainer/*

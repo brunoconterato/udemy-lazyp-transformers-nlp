@@ -168,3 +168,4 @@ cython_debug/
 
 # Checkpoints
 training_dir*
+NER and POS Tagging (Intermediate)/pos_data.json

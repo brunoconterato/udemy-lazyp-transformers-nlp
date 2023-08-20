@@ -6,3 +6,4 @@ sacrebleu
 bert-score
 seqeval
 sacremoses
+evaluate

@@ -1,5 +1,6 @@
 name: gpt
 channels:
+  - conda-forge
   - defaults
 dependencies:
   - _anaconda_depends=2022.10=py39_2
@@ -40,8 +41,8 @@ dependencies:
   - brunsli=0.1=h2531618_0
   - bzip2=1.0.8=h7b6447c_0
   - c-ares=1.18.1=h7f8727e_0
-  - ca-certificates=2023.01.10=h06a4308_0
-  - certifi=2022.12.7=py39h06a4308_0
+  - ca-certificates=2023.7.22=hbcca054_0
+  - certifi=2023.7.22=pyhd8ed1ab_0
   - cffi=1.15.1=py39h5eee18b_3
   - cfitsio=3.470=hf0d0db6_6
   - chardet=4.0.0=py39h06a4308_1003
@@ -73,6 +74,7 @@ dependencies:
   - decorator=5.1.1=pyhd3eb1b0_0
   - defusedxml=0.7.1=pyhd3eb1b0_0
   - diff-match-patch=20200713=pyhd3eb1b0_0
+  - dill=0.3.7=pyhd8ed1ab_0
   - distributed=2022.2.1=pyhd3eb1b0_0
   - docutils=0.18.1=py39h06a4308_3
   - entrypoints=0.4=py39h06a4308_0
@@ -233,7 +235,7 @@ dependencies:
   - oniguruma=6.9.7.1=h27cfd23_0
   - openjpeg=2.4.0=h3ad879b_0
   - openpyxl=3.0.10=py39h5eee18b_0
-  - openssl=1.1.1t=h7f8727e_0
+  - openssl=1.1.1v=h7f8727e_0
   - packaging=22.0=py39h06a4308_0
   - pandas=1.5.2=py39h417a72b_0
   - pandocfilters=1.5.0=pyhd3eb1b0_0
@@ -254,6 +256,7 @@ dependencies:
   - plotly=5.9.0=py39h06a4308_0
   - pluggy=1.0.0=py39h06a4308_1
   - ply=3.11=py39h06a4308_0
+  - portaudio=19.6.0=h7b6447c_4
   - poyo=0.5.0=pyhd3eb1b0_0
   - prometheus_client=0.14.1=py39h06a4308_0
   - prompt-toolkit=3.0.36=py39h06a4308_0
@@ -295,6 +298,7 @@ dependencies:
   - python-lsp-server=1.5.0=py39h06a4308_0
   - python-slugify=5.0.2=pyhd3eb1b0_0
   - python-snappy=0.6.1=py39h6a678d5_0
+  - python-sounddevice=0.4.6=pyhd8ed1ab_0
   - pytz=2022.7=py39h06a4308_0
   - pyviz_comms=2.0.2=pyhd3eb1b0_0
   - pywavelets=1.4.1=py39h5eee18b_0
@@ -375,8 +379,6 @@ dependencies:
   - tqdm=4.64.1=py39h06a4308_0
   - traitlets=5.7.1=py39h06a4308_0
   - twisted=22.2.0=py39h5eee18b_1
-  - typing-extensions=4.4.0=py39h06a4308_0
-  - typing_extensions=4.4.0=py39h06a4308_0
   - tzdata=2022g=h04d1e81_0
   - ujson=5.4.0=py39h6a678d5_0
   - unidecode=1.2.0=pyhd3eb1b0_0
@@ -412,30 +414,60 @@ dependencies:
       - accelerate==0.21.0
       - aiohttp==3.8.4
       - aiosignal==1.3.1
+      - annotated-types==0.5.0
+      - antlr4-python3-runtime==4.8
       - async-timeout==4.0.2
+      - audioread==3.0.0
       - bert-score==0.3.13
       - cmake==3.25.0
+      - coloredlogs==15.0.1
       - datasets==2.14.2
-      - dill==0.3.7
+      - diskcache==5.6.3
+      - distance==0.1.3
       - evaluate==0.4.0
+      - fairseq==0.12.2
+      - ffmpeg-python==0.2.0
       - flask-cors==3.0.10
       - frozenlist==1.3.3
+      - future==0.18.3
+      - g2p-en==2.1.0
+      - gpt4all==1.0.8
       - huggingface-hub==0.16.4
+      - humanfriendly==10.0
+      - hydra-core==1.0.7
+      - inflect==7.0.0
+      - inquirerpy==0.3.4
+      - ipywebrtc==0.6.0
+      - keyboard==0.13.5
+      - lazy-loader==0.3
+      - librosa==0.10.1
       - lit==15.0.7
+      - llama-cpp-python==0.1.78
       - multidict==6.0.4
       - multiprocess==0.70.15
+      - omegaconf==2.0.6
       - openai==0.27.2
+      - optimum==1.12.0
+      - pfzy==0.3.4
+      - pooch==1.7.0
       - portalocker==2.7.0
       - protobuf==4.23.4
       - pyarrow==12.0.1
+      - pyaudio==0.2.13
+      - pydantic==2.3.0
+      - pydantic-core==2.6.3
       - pyre-extensions==0.0.29
       - python-dotenv==0.21.1
       - responses==0.18.0
       - sacrebleu==2.3.1
       - sacremoses==0.0.53
       - safetensors==0.3.1
+      - samplerate==0.1.0
       - sentencepiece==0.1.99
       - seqeval==1.2.2
+      - soundfile==0.12.1
+      - soxr==0.3.6
+      - tensorboardx==2.6.2.2
       - tokenizers==0.13.3
       - torch==2.0.1+cu118
       - torchaudio==2.0.2+cu118
@@ -443,6 +475,7 @@ dependencies:
       - torchvision==0.15.2+cu118
       - transformers==4.31.0
       - triton==2.0.0
+      - typing-extensions==4.7.1
       - typing-inspect==0.9.0
       - xformers==0.0.20
       - xxhash==3.3.0

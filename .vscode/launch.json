@@ -1,0 +1,29 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "jupyter: run selection",
+      "type": "shell",
+      "command": "${config:python.pythonPath}",
+      "args": [
+        "-m",
+        "jupyter",
+        "nbconvert",
+        "--to",
+        "notebook",
+        "--execute",
+        "--ExecutePreprocessor.timeout=-1",
+        "--stdout",
+        "--FileCheckpoints.checkpoints_enabled=False",
+        "${file}",
+        "--NotebookApp.file_to_run=${file}",
+        "--no-prompt"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": []
+    }
+  ]
+}
